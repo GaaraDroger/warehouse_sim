@@ -1,0 +1,9 @@
+<launch>
+  <!-- Launch Gazebo with your custom warehouse world -->
+  <node
+    name="gazebo"
+    pkg="gazebo_ros"
+    type="gazebo"
+    args="-s libgazebo_ros_factory.so worlds/warehouse_world.world"
+    output="screen" />
+</launch>
