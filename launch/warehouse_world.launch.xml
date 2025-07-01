@@ -2,11 +2,10 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://ros.org/schema/launch http://ros.org/schema/launch/launch.xsd">
 
-  <!-- Launch Gazebo with your custom warehouse world -->
   <node
     name="gazebo"
     pkg="gazebo_ros"
     exec="gazebo"
-    args="-s libgazebo_ros_factory.so worlds/warehouse_world.world"
+    args="-s libgazebo_ros_factory.so $(find-pkg-share warehouse_sim)/worlds/warehouse_world.world"
     output="screen" />
 </launch>
