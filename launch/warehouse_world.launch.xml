@@ -6,6 +6,6 @@
     name="gazebo"
     pkg="gazebo_ros"
     exec="gazebo"
-    args="-s libgazebo_ros_factory.so share/warehouse_sim/worlds/warehouse_world.world"
+    args="-s libgazebo_ros_factory.so worlds/warehouse_world.world"
     output="screen" />
 </launch>
